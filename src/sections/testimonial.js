@@ -1,9 +1,9 @@
-import { Container, Heading, Text, Box } from 'theme-ui';
-import Image from 'next/image';
-import SectionHeader from 'components/section-header';
-import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
+import Rating from 'components/rating';
+import SectionHeader from 'components/section-header';
+import Image from 'next/image';
 import Carousel from 'react-multi-carousel';
+import { Box, Container, Heading, Text } from 'theme-ui';
 
 import Avatar1 from 'assets/testimonial/avatar1.png';
 import Avatar2 from 'assets/testimonial/avatar2.png';
@@ -13,42 +13,42 @@ import Avatar4 from 'assets/testimonial/avatar4.png';
 const data = [
   {
     id: 1,
-    title: 'Modern look & trending design',
+    title: 'AI Automation',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+     "Bigroup's AI automation solutions have revolutionized our production line. Their expertise in led to a significant increase in efficiency and a reduction in operational costs. We're thrilled with the results!",
     avatar: Avatar1,
     name: 'Jenny Yellow',
-    designation: '@jenny.ylw',
+    designation: 'Operations Manager',
     review: 5,
   },
   {
     id: 2,
-    title: 'Design Quality & performance',
+    title: 'Business Intelligence',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+     "Bigroup's business intelligence platform has provided us with invaluable insights into our financial performance. Their data visualization tools are exceptional, making it easy to identify trends and make informed decisions.",
     avatar: Avatar2,
-    name: 'Jenny Yellow',
-    designation: '@jenny.ylw',
+    name: 'David Brown',
+    designation: 'Finance Director',
     review: 5,
   },
   {
     id: 3,
-    title: 'Layout and organized layers',
+    title: 'E-commerce',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    "Bigroup's e-commerce solutions have boosted our online sales dramatically. Their AI-powered product recommendations have improved customer satisfaction and increased average order value. We're very happy with our partnership.",
     avatar: Avatar3,
-    name: 'Jenny Yellow',
-    designation: '@jenny.ylw',
+    name: 'Chris Evans',
+    designation: 'E-commerce Manager',
     review: 5,
   },
   {
     id: 4,
-    title: 'Modern look & trending design',
+    title: 'Funnels and Smart Marketing',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+     "Bigroup's funnels and automation tools have streamlined our sales process and improved our sales team's productivity. Their data-driven approach has helped us close more deals.",
     avatar: Avatar4,
-    name: 'Jenny Yellow',
-    designation: '@jenny.ylw',
+    name: 'Olivia Miller',
+    designation: 'Sales Manager',
     review: 4,
   },
 ];
@@ -111,7 +111,7 @@ export default function TestimonialCard() {
               <Heading as="h3" sx={styles.title}>
                 {item.title}
               </Heading>
-              <Text sx={styles.description}>{item.description}</Text>
+              <Text sx={styles.description}>{item.description.slice(0,250)}</Text>
               <div className="card-footer">
                 <div className="image">
                   <Image src={item.avatar} alt="Client Image" />

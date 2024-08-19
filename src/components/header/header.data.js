@@ -13,13 +13,14 @@ export default [
     label: 'Services',
   },
 
-  {
-    path: 'testimonial',
-    label: 'Testimonial',
-  },
+ 
   {
     path: 'solutions',
     label: 'Solutions',
+  },
+  {
+    path: 'testimonial',
+    label: 'Testimonial',
   },
   {
     path: 'contact',

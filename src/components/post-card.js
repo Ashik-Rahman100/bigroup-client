@@ -1,5 +1,5 @@
-import { Box, Heading, Text, Flex, Link } from 'theme-ui';
-import Image from 'next/image';
+import Image from "next/image";
+import { Box, Flex, Heading, Link, Text } from "theme-ui";
 export default function PostCard({
   src,
   alt,
@@ -10,10 +10,16 @@ export default function PostCard({
 }) {
   return (
     <Box sx={styles.card}>
-      <Box sx={styles.thumbnail}>
-        <Image src={src} alt={alt} height={300} style={{objectFit: 'cover'}}/>
-      </Box>
-
+      <Link href={postLink} variant="blog">
+        <Box sx={styles.thumbnail}>
+          <Image
+            src={src}
+            alt={alt}
+            height={300}
+            style={{ objectFit: "cover" }}
+          />
+        </Box>
+      </Link>
       <Flex sx={styles.postContent}>
         <Heading sx={styles.title}>
           <Link href={postLink} variant="blog">
@@ -32,49 +38,49 @@ export default function PostCard({
 
 const styles = {
   card: {
-    backgroundColor: 'white',
-    boxShadow: '0px 4px 10px rgba(38,78,118,0.12)',
-    borderRadius: '7px',
-    m: '0 15px 40px',
-    transition: 'all 0.3s',
-    '&:hover': {
-      boxShadow: '0px 5px 20px rgba(38,78,118,0.15)',
+    backgroundColor: "white",
+    boxShadow: "0px 4px 10px rgba(38,78,118,0.12)",
+    borderRadius: "7px",
+    m: "0 15px 40px",
+    transition: "all 0.3s",
+    "&:hover": {
+      boxShadow: "0px 5px 20px rgba(38,78,118,0.15)",
     },
   },
 
   thumbnail: {
-    borderRadius: '7px 7px 0 0',
-    overflow: 'hidden',
-    display: 'flex',
+    borderRadius: "7px 7px 0 0",
+    overflow: "hidden",
+    display: "flex",
     img: {
-      width: '100%',
+      width: "100%",
     },
   },
   postContent: {
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    padding: ['15px 20px', '25px 30px'],
+    flexDirection: "column",
+    justifyContent: "space-between",
+    padding: ["15px 20px", "25px 30px"],
   },
   title: {
     fontSize: [3, null, null, null, null, 4],
-    color: 'heading',
+    color: "heading",
     lineHeight: [1.4, 1.5],
     fontWeight: 700,
     mb: [3, 4, 5],
     pr: [0, null, null, null, 5],
   },
   postFooter: {
-    width: '100%',
-    justifyContent: 'space-between',
-    alignItem: 'center',
+    width: "100%",
+    justifyContent: "space-between",
+    alignItem: "center",
     name: {
-      fontSize: ['14px', null, 2],
+      fontSize: ["14px", null, 2],
       fontWeight: 500,
-      color: 'primary',
+      color: "primary",
       lineHeight: 1.4,
     },
     date: {
-      fontSize: ['14px', null, 2],
+      fontSize: ["14px", null, 2],
       fontWeight: 400,
       lineHeight: 1.5,
     },

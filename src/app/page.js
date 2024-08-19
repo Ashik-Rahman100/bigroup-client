@@ -1,6 +1,7 @@
 'use client';
 import Contact from 'components/contact/contact';
 import Layout from 'components/layout';
+import Solutions from 'components/solutions/solutions';
 import Banner from 'sections/banner';
 import CoreFeature from 'sections/core-feature';
 import Feature from 'sections/feature';
@@ -22,6 +23,7 @@ export default function Home() {
           <ServiceSection />
           <KeyFeature />
           <Feature/>
+          <Solutions />
           <WorkFlow/>
           {/* <Package/> */}
           {/* <TeamSection/> */}
