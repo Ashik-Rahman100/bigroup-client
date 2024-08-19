@@ -50,7 +50,7 @@ export default function Feature() {
           title="Amazing useful features"
         />
 
-        <Grid sx={styles.grid}>
+        <Grid data-aos="fade-up" data-aos-duration="1000" sx={styles.grid}>
           {data.map((item) => (
             <FeatureCard
               key={item.id}

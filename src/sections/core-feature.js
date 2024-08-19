@@ -17,7 +17,7 @@ export default function CoreFeature() {
   return (
     <Box id='about' sx={{ variant: 'section.coreFeature' }}>
       <Container sx={styles.containerBox}>
-        <Box sx={styles.contentBox}>
+        <Box data-aos="fade-up" data-aos-duration="3000" sx={styles.contentBox}>
           <TextFeature
             subTitle={data.subTitle}
             title={data.title}
@@ -27,7 +27,7 @@ export default function CoreFeature() {
           />
         </Box>
         <Box sx={styles.thumbnail}>
-          <Image src={FeatureThumb} alt="Thumbnail" />
+          <Image data-aos="fade-down"   src={FeatureThumb} alt="Thumbnail" />
           <Box sx={styles.shapeBox}>
             <Image src={shapePattern} alt="Shape" />
           </Box>

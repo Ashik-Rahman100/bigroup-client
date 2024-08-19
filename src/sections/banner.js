@@ -7,15 +7,15 @@ export default function Banner() {
     <Box sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
-          <Heading as="h1" variant="heroPrimary">
+          <Heading as="h1" variant="heroPrimary" >
             Automate your sales and use Business Intelligence
           </Heading>
-          <Text as="p" variant="heroSecondary">
+          <Text as="p" variant="heroSecondary" data-aos="fade-down">
             Before the product was the center of your marketing strategy, now
             the customer with their desires and needs are the center of the
             strategy.
           </Text>
-          <Button  variant="primary">Explore</Button>
+          <Button data-aos="zoom-in"  variant="primary">Explore</Button>
         </Box>
 
         <Box sx={styles.banner.imageBox}></Box>

@@ -43,7 +43,7 @@ export default function WorkFlow() {
 
         <Grid sx={styles.grid}>
           {data.map((item) => (
-            <Box sx={styles.card} key={item.id}>
+            <Box  data-aos="fade-right" data-aos-duration="1000" sx={styles.card} key={item.id}>
               <Box sx={styles.iconBox}>{`0${item.id}`}</Box>
               <Box sx={styles.wrapper}>
                 <Heading sx={styles.wrapper.title}>{item.title}</Heading>

@@ -77,7 +77,7 @@ export default function Solutions() {
           title="Explore our products for your business solution"
         />
 
-        <Box sx={styles.carouselWrapper}>
+        <Box data-aos="fade-down" data-aos-duration='1000' sx={styles.carouselWrapper}>
           <Carousel
             additionalTransfrom={0}
             arrows={false}
