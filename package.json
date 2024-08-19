@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.11.1",
     "next": "13.4.19",
     "rc-drawer": "^6.4.1",

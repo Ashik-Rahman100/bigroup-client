@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 // import fetch from 'isomorphic-unfetch';
-import { Container, Flex, Box, Button, Input, Text, Heading } from 'theme-ui';
+import { Box, Button, Container, Heading, Input, Text } from 'theme-ui';
 
 export default function Subscribe() {
   // 1. Create a reference to the input so we can fetch/clear it's value.
@@ -82,17 +82,43 @@ export default function Subscribe() {
               tempor incididunt labore dolore.
             </Text>
             <form onSubmit={subscribe}>
-              <Flex sx={styles.subscribeForm}>
-                <Box htmlFor="email" sx={{ variant: 'styles.srOnly' }}>
+              {/* <Flex sx={styles.subscribeForm}> */}
+                {/* <Box htmlFor="email" sx={{ variant: 'styles.srOnly' }}>
                   Email Address
-                </Box>
+                </Box> */}
+                <div className={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  color: 'white'
+                }}> 
+                  <labe>Name</labe>
                 <Input
                   ref={inputEl}
-                  id="email"
+                  // id="email"
+                  name="name"
+                  type="text"
+                  placeholder="Enter your Name"
+                /> <br />
+                </div>
+
+              <div>
+                <label className={styles.description.color}>Email</label>
+              <Input
+                  ref={inputEl}
+                  // id="email"
                   name="email"
                   type="email"
                   placeholder="Enter your email address"
-                />
+                /> <br />
+              </div>
+                <Input
+                  ref={inputEl}
+                  // id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email address"
+                />  <br />
 
                 <div>
                   {status.info.error && (
@@ -110,11 +136,11 @@ export default function Subscribe() {
                 >
                   {!status.submitting
                     ? !status.submitted
-                      ? 'Subscribe'
+                      ? 'Submit'
                       : 'Submitted'
                     : 'Submitting...'}
                 </Button>
-              </Flex>
+              {/* </Flex> */}
             </form>
           </Box>
         </Box>
@@ -143,6 +169,11 @@ const styles = {
     fontWeight: '700',
     letterSpacing: ['-.5px', null, '-1.5px'],
     mb: [2, 3],
+  },
+  inputdiv:{
+    display:"flex",
+    justify:"start",
+    items:"start",
   },
   description: {
     fontSize: ['15px', 2, null, null, null, '17px', null, 3],
@@ -180,7 +211,7 @@ const styles = {
     '.subscribe__btn': {
       flexShrink: 0,
       ml: [0, 2],
-      backgroundColor: ['text', 'primary'],
+      backgroundColor: "#fff",
       mt: [2, 0],
       py: ['15px'],
     },
