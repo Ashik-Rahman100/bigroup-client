@@ -51,7 +51,7 @@ function Technology() {
                       className="h-full w-auto rounded-lg"
                     />
                   </div>
-                  <p className=" text-sm sm:text-lg">{skill}</p>
+                  <p className="font-bold text-sm sm:text-lg">{skill}</p>
                 </div>
               </div>
             </div>
