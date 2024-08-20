@@ -8,8 +8,7 @@ import {
   Text
 } from 'theme-ui';
 
-import ServiceThumb from '../assets/service-thumb.png';
-import shapePattern from '../assets/shape-pattern1.png';
+import ServiceThumb from '../assets/bussiness.png';
 
 import Secure from '../assets/services/secure.svg';
 import Smart from '../assets/services/smart.svg';
@@ -43,10 +42,10 @@ export default function ServiceSection() {
       <Box sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt="Thumbnail" />
-          <Box sx={styles.shapeBox}>
+          <Image className='rounded-lg transition duration-300 ease-in-out hover:scale-110' src={ServiceThumb} alt="Thumbnail" />
+          {/* <Box sx={styles.shapeBox}>
             <Image src={shapePattern} alt="Shape" />
-          </Box>
+          </Box> */}
         </Box>
         <Box  sx={styles.contentBox}>
           <TextFeature subTitle={data.subTitle} title={data.title} />
@@ -89,6 +88,7 @@ const styles = {
     ml: ['auto', null, null, 0],
     display: 'inline-flex',
     width: '100%',
+    height:"450px",
     position: 'relative',
     '> img': {
       position: 'relative',

@@ -1,6 +1,6 @@
 import { Box, Container } from 'theme-ui';
-import FeatureThumb from '../assets/core-feature.png';
-import shapePattern from '../assets/shape-pattern2.png';
+import FeatureThumb from '../assets/ai.png';
+// import shapePattern from '../assets/shape-pattern2.png';
 import Image from '../components/image';
 import TextFeature from '../components/text-feature';
 
@@ -26,11 +26,11 @@ export default function CoreFeature() {
             btnURL={data.btnURL}
           />
         </Box>
-        <Box sx={styles.thumbnail}>
-          <Image data-aos="fade-down"   src={FeatureThumb} alt="Thumbnail" />
-          <Box sx={styles.shapeBox}>
+        <Box data-aos="fade-down"  sx={styles.thumbnail}>
+          <Image className='rounded-lg transition duration-300 ease-in-out hover:scale-110'   src={FeatureThumb} alt="Thumbnail" />
+          {/* <Box sx={styles.shapeBox}>
             <Image src={shapePattern} alt="Shape" />
-          </Box>
+          </Box> */}
         </Box>
       </Container>
     </Box>
