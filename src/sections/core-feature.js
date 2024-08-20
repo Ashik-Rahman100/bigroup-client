@@ -17,7 +17,7 @@ export default function CoreFeature() {
   return (
     <Box id='about' sx={{ variant: 'section.coreFeature' }}>
       <Container sx={styles.containerBox}>
-        <Box data-aos="fade-up" data-aos-duration="3000" sx={styles.contentBox}>
+        <Box sx={styles.contentBox}>
           <TextFeature
             subTitle={data.subTitle}
             title={data.title}

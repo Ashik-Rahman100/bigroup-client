@@ -32,7 +32,7 @@ const Contact = () => {
       sx={{ variant: "section.testimonial" }}
       className="overflow-hidden py-16 md:py-20 lg:py-28"
     >
-      <Container css={{ textAlign: "center" }}>
+      <Container  css={{ textAlign: "center" }}>
         <SectionHeader
           slogan="Contact Us "
           title="If you need feel free contact us."

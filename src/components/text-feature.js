@@ -10,16 +10,16 @@ export default function TextFeature({
   return (
     <Box sx={styles.card}>
       <Box sx={styles.wrapper}>
-        <Text data-aos="fade-right" data-aos-duration="1500" as="p" sx={styles.wrapper.subTitle}>
+        <Text data-aos="fade-up" data-aos-duration="1500"  as="p" sx={styles.wrapper.subTitle}>
           {subTitle}
         </Text>
-        <Heading data-aos="fade-right" data-aos-duration="2000" as="h2" sx={styles.wrapper.title}>
+        <Heading data-aos="fade-up"   data-aos-duration="2000" as="h2" sx={styles.wrapper.title}>
           {title}
         </Heading>
       </Box>
 
       {description && (
-        <Text as="p" data-aos="fade-right" data-aos-duration="2500" className="description" sx={styles.description}>
+        <Text as="p" data-aos="fade-up" data-aos-duration="3000" className="description" sx={styles.description}>
           {description}
         </Text>
       )}

@@ -121,7 +121,7 @@ export default function TestimonialCard() {
               </Text>
               <div className="card-footer">
                 <div className="image">
-                  <Image src={item.avatar} alt="Client Image" />
+                  <Image className="transition duration-300 ease-in-out hover:scale-110" src={item.avatar} alt="Client Image" />
                 </div>
                 <div className="reviewer-info">
                   <Heading as="h4" sx={styles.heading}>

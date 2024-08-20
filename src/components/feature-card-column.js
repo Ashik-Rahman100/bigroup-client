@@ -9,7 +9,9 @@ export default function FeatureCardColumn({
 }) {
   return (
     <Box sx={styles.card}>
-      <Image data-aos="fade-up" data-aos-duration="1000" height={80} width={80} src={src} alt={altText} style={styles.img} />
+      <Image
+      className="transition duration-300 ease-in-out hover:scale-110" 
+        height={80} width={80} src={src} alt={altText} style={styles.img} />
 
       <Box sx={styles.wrapper}>
         <Heading data-aos="fade-up" data-aos-duration="2000" sx={styles.wrapper.title}>{title}</Heading>

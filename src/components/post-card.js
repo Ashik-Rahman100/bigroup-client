@@ -11,8 +11,9 @@ export default function PostCard({
   return (
     <Box sx={styles.card}>
       <Link href={postLink} variant="blog">
-        <Box className="hover:transition-transform " data-aos="zoom-in" data-aos-duration="3000" sx={styles.thumbnail}>
-          <Image
+        <Box  data-aos="zoom-in" data-aos-duration="3000" sx={styles.thumbnail}>
+          <Image 
+          className="transition duration-300 ease-in-out hover:scale-110"
             src={src}
             alt={alt}
             height={2500}
