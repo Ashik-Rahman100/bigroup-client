@@ -10,6 +10,7 @@ import CoreFeature from 'sections/core-feature';
 import Feature from 'sections/feature';
 import KeyFeature from 'sections/key-feature';
 import ServiceSection from 'sections/service-section';
+import Technology from 'sections/technology';
 import TestimonialCard from 'sections/testimonial';
 import WorkFlow from 'sections/workflow';
 import theme from 'theme';
@@ -27,6 +28,7 @@ export default function Home() {
           <Banner/>
           <CoreFeature/>
           <ServiceSection />
+          <Technology />
           <KeyFeature />
           <Feature/>
           <Solutions />

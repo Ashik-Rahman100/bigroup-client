@@ -15,7 +15,7 @@ export default function PostCard({
           <Image
             src={src}
             alt={alt}
-            height={300}
+            height={2500}
             style={{ objectFit: "cover" }}
           />
         </Box>
@@ -52,6 +52,7 @@ const styles = {
     borderRadius: "7px 7px 0 0",
     overflow: "hidden",
     display: "flex",
+    height:"250px",
     img: {
       width: "100%",
     },

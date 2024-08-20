@@ -1,5 +1,5 @@
 import BiParking from 'assets/solutions/BI-Car-Parking.png';
-import AppBi from 'assets/solutions/Login.png';
+import AppBi from 'assets/solutions/app.jpg';
 import ButtonGroup from 'components/button-group';
 import PostCard from 'components/post-card.js';
 import SectionHeader from 'components/section-header';

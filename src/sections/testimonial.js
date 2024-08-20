@@ -184,6 +184,7 @@ const styles = {
       "35px 30px 40px 40px",
     ],
     bg: "white",
+    height:"450px",
     textAlign: "left",
     m: [
       "28px 5px 30px 5px",
