@@ -62,7 +62,7 @@ export default function KeyFeature() {
           title="Meet the feature of product"
         />
 
-        <Grid data-aos="fade-up" data-aos-duration="1000" sx={styles.grid}>
+        <Grid  sx={styles.grid}>
           {data.map((item) => (
             <FeatureCardColumn
               key={item.id}

@@ -9,11 +9,11 @@ export default function FeatureCardColumn({
 }) {
   return (
     <Box sx={styles.card}>
-      <Image height={80} width={80} src={src} alt={altText} style={styles.img} />
+      <Image data-aos="fade-up" data-aos-duration="1000" height={80} width={80} src={src} alt={altText} style={styles.img} />
 
       <Box sx={styles.wrapper}>
-        <Heading sx={styles.wrapper.title}>{title}</Heading>
-        <Text sx={styles.wrapper.subTitle}>{text}</Text>
+        <Heading data-aos="fade-up" data-aos-duration="2000" sx={styles.wrapper.title}>{title}</Heading>
+        <Text data-aos="fade-up" data-aos-duration="3000" sx={styles.wrapper.subTitle}>{text}</Text>
       </Box>
     </Box>
   );

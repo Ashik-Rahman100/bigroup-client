@@ -33,7 +33,7 @@ const data = [
 
 export default function WorkFlow() {
   return (
-    <Box sx={styles.workflow}>
+    <Box data-aos="fade-right" data-aos-duration="1000" sx={styles.workflow}>
       <Container>
         <SectionHeader
           slogan="Whats the function"
@@ -43,11 +43,11 @@ export default function WorkFlow() {
 
         <Grid sx={styles.grid}>
           {data.map((item) => (
-            <Box  data-aos="fade-right" data-aos-duration="1000" sx={styles.card} key={item.id}>
-              <Box sx={styles.iconBox}>{`0${item.id}`}</Box>
+            <Box   sx={styles.card} key={item.id}>
+              <Box data-aos="fade-right" data-aos-duration="1500" sx={styles.iconBox}>{`0${item.id}`}</Box>
               <Box sx={styles.wrapper}>
-                <Heading sx={styles.wrapper.title}>{item.title}</Heading>
-                <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
+                <Heading data-aos="fade-right" data-aos-duration="2000" sx={styles.wrapper.title}>{item.title}</Heading>
+                <Text data-aos="fade-right" data-aos-duration="3000" sx={styles.wrapper.subTitle}>{item.text}</Text>
               </Box>
             </Box>
           ))}

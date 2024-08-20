@@ -48,17 +48,17 @@ export default function ServiceSection() {
             <Image src={shapePattern} alt="Shape" />
           </Box>
         </Box>
-        <Box data-aos="fade-left" sx={styles.contentBox}>
+        <Box  sx={styles.contentBox}>
           <TextFeature subTitle={data.subTitle} title={data.title} />
 
           <Grid sx={styles.grid}>
             {data.features.map((item) => (
               <Box sx={styles.card} key={item.id}>
-                <Image src={item.imgSrc} alt={item.altText} style={styles.icon} />
+                <Image  data-aos="fade-up" data-aos-duration="2500" src={item.imgSrc} alt={item.altText} style={styles.icon} />
 
                 <Box sx={styles.wrapper}>
-                  <Heading sx={styles.wrapper.title}>{item.title}</Heading>
-                  <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
+                  <Heading data-aos="fade-up" data-aos-duration="3500" sx={styles.wrapper.title}>{item.title}</Heading>
+                  <Text data-aos="fade-up" data-aos-duration="3000" sx={styles.wrapper.subTitle}>{item.text}</Text>
                 </Box>
               </Box>
             ))}

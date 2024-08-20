@@ -1,5 +1,5 @@
-import { Box, Heading, Text } from 'theme-ui';
 import Image from 'next/image';
+import { Box, Heading, Text } from 'theme-ui';
 
 export default function FeatureCard({
   src,
@@ -9,11 +9,11 @@ export default function FeatureCard({
 }) {
   return (
     <Box sx={styles.card}>
-      <Image src={src} alt={altText} style={styles.img} />
+      <Image data-aos="fade-right" data-aos-duration="1500" src={src} alt={altText} style={styles.img} />
 
       <Box sx={styles.wrapper}>
-        <Heading sx={styles.wrapper.title}>{title}</Heading>
-        <Text sx={styles.wrapper.subTitle}>{text}</Text>
+        <Heading data-aos="fade-right" data-aos-duration="2000" sx={styles.wrapper.title}>{title}</Heading>
+        <Text data-aos="fade-right" data-aos-duration="2500" sx={styles.wrapper.subTitle}>{text}</Text>
       </Box>
     </Box>
   );

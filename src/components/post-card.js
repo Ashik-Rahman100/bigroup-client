@@ -11,7 +11,7 @@ export default function PostCard({
   return (
     <Box sx={styles.card}>
       <Link href={postLink} variant="blog">
-        <Box sx={styles.thumbnail}>
+        <Box className="hover:transition-transform " data-aos="zoom-in" data-aos-duration="3000" sx={styles.thumbnail}>
           <Image
             src={src}
             alt={alt}
@@ -21,7 +21,7 @@ export default function PostCard({
         </Box>
       </Link>
       <Flex sx={styles.postContent}>
-        <Heading sx={styles.title}>
+        <Heading data-aos="fade-up" data-aos-duration="4000"  sx={styles.title}>
           <Link href={postLink} variant="blog">
             {title}
           </Link>

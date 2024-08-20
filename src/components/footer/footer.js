@@ -26,7 +26,7 @@ const Footer = () => {
                     height={30}
                   /> */}
                 </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                <p data-aos="fade-right" className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   Automate your sales and use Business Intelligence
                 </p>
                 <div className="flex items-center">
@@ -114,7 +114,7 @@ const Footer = () => {
                   Useful Links
                 </h2>
                 <ul>
-                  <li id="feature">
+                  <li data-aos="fade-right" id="feature">
                     <Link
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -122,7 +122,7 @@ const Footer = () => {
                       Services
                     </Link>
                   </li>
-                  <li>
+                  <li data-aos="fade-right">
                     <Link
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -130,7 +130,7 @@ const Footer = () => {
                       Solutions
                     </Link>
                   </li>
-                  <li>
+                  <li data-aos="fade-right">
                     <Link
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -148,7 +148,7 @@ const Footer = () => {
                   Terms
                 </h2>
                 <ul>
-                  <li>
+                  <li data-aos="fade-right">
                     <Link
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -156,7 +156,7 @@ const Footer = () => {
                       TOS
                     </Link>
                   </li>
-                  <li>
+                  <li data-aos="fade-right">
                     <Link
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -164,7 +164,7 @@ const Footer = () => {
                       Privacy Policy
                     </Link>
                   </li>
-                  <li>
+                  <li data-aos="fade-right">
                     <Link
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -182,7 +182,7 @@ const Footer = () => {
                   Support & Help
                 </h2>
                 <ul>
-                  <li>
+                  <li data-aos="fade-right">
                     <Link
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -190,7 +190,7 @@ const Footer = () => {
                       Contact Us
                     </Link>
                   </li>
-                  <li>
+                  <li data-aos="fade-right">
                     <Link
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -198,7 +198,7 @@ const Footer = () => {
                       Terms of Use
                     </Link>
                   </li>
-                  <li>
+                  <li data-aos="fade-right">
                     <Link
                       href="/v"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -213,7 +213,7 @@ const Footer = () => {
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white">
+            <p data-aos="fade-bottom" className="text-center text-base text-body-color dark:text-white">
               Copyright by {new Date().getFullYear()} bigroup.LLC
             </p>
           </div>

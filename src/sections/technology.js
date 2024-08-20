@@ -13,7 +13,7 @@ function Technology() {
   return (
     <div
       id="skills"
-      className="relative z-50 "
+      className="relative z-50 px-1 lg:px-20"
     >
        <SectionHeader
           slogan="Whats technology we use"
@@ -32,7 +32,7 @@ function Technology() {
         >
           {skillsData.map((skill, id) => (
             <div
-              className="w-48 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
+              className="w-48 min-w-fit h-fit  flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
               key={id}
             >
               <div className="h-full w-full rounded-lg border border-violet-500   shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
